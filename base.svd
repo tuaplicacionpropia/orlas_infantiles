@@ -7,6 +7,7 @@ endmsg: «Me lo contaron y lo olvidé; lo vi y lo entendí; lo hice y lo aprend�
 school: images/school.jpg
 themes: /home/jmramoss/almacen/ORLAS/orlas_infantiles/themes.svd
 repository: /home/jmramoss/almacen/ORLAS/orlas_infantiles
+resources: /home/jmramoss/almacen/ORLAS/orlas_infantiles
 templates: [
   {
     template: orla.svg
