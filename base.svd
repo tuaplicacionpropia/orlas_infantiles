@@ -10,6 +10,15 @@ repository: /home/jmramoss/almacen/ORLAS/orlas_infantiles
 resources: /home/jmramoss/almacen/ORLAS/orlas_infantiles
 templates: [
   {
+    template: orla_infantil.svg
+    themes: [
+      theme_infantil
+    ]
+  }
+]
+/*
+templates: [
+  {
     template: orla.svg
     themes: [
       t2_theme03
@@ -22,7 +31,6 @@ templates: [
     ]
   }
 ]
-/*
 templates: [
   {
     template: clips/orla_type3.svg
@@ -66,10 +74,27 @@ templates: [
 ]
 */
 teacher: {
-  name: LeticÍa Del Pino
+  name: Leticia Del Pino
   surnames: Florido Ramírez
-  image: images/female_teacher3.jpg
+  image: images/female_teacher8.jpg
 }
+assistants: [
+  {
+    name: Mercedes
+    surnames: Pérez Gómez
+    image: images/female_teacher6.jpg
+  }
+  {
+    name: Julia
+    surnames: Robledano García
+    image: images/female_teacher7.jpg
+  }
+  {
+    name: Elsa
+    surnames: López Martínez
+    image: images/female_teacher9.jpg
+  }
+]
 background: {
   title: C.P. Pedro Lezcano
   subtitle: Promoción 2020 - 2023

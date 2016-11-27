@@ -553,3 +553,31 @@ tgenerator: {
   }
 }
 */
+
+//t2_theme03
+//orla_infantil.svg
+//change fondo con corazones: OK
+//Cole a un lado: OK
+//marcos: letra de: student_base3 y marco de student: OK
+//teacher: teacher_base change marco verde: OK
+//students: { change marco verde: OK
+//4 profesores
+//Niños con cabeza y hombros
+theme_infantil: {
+  background: background
+  decorator: decorator_infantil
+  border: {
+    top_left: border_top_left_type2
+    top_right: border_top_right_type2
+    bottom_left: border_bottom_left_type2
+    bottom_right: border_bottom_right_type2
+  }
+  header: header_type3
+  school: school
+  teacher: teacher_infantil
+  students: {
+    male: student_infantil
+    female: student_infantil
+  }
+}
+
