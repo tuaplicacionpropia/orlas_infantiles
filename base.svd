@@ -74,8 +74,8 @@ templates: [
 ]
 */
 teacher: {
-  name: Leticia Del Pino
-  surnames: Florido Ramírez
+  name: Magaly
+  surnames: Socorro Santana
   image: images/female_teacher8.jpg
 }
 assistants: [
