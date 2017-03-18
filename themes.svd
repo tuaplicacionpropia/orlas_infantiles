@@ -581,3 +581,21 @@ theme_infantil: {
   }
 }
 
+theme_infantil2: {
+  background: background
+  decorator: decorator_infantil
+  border: {
+    top_left: border_top_left_type2
+    top_right: border_top_right_type2
+    bottom_left: border_bottom_left_type2
+    bottom_right: border_bottom_right_type2
+  }
+  header: header_type3
+  school: school
+  teacher: teacher_infantil2
+  students: {
+    male: student_infantil
+    female: student_infantil
+  }
+}
+
