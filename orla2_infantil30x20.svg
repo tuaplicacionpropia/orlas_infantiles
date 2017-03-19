@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.69333227"
-     inkscape:cx="-526.93237"
+     inkscape:cx="-853.61556"
      inkscape:cy="339.15063"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -53,6 +53,9 @@
         <dc:description>theme = data['theme']
 border = theme['border']
 
+#modes=['MODE1','MODE2','MODE3','MODE4']
+defaultMode = data['cropMode'] if 'cropMode' in data else 'MODE4'
+
 svg.setPart('background', 'backgrounds/' + theme['background'] + '.svg', data)
 if 'decorator' in theme:
   svg.setPart('decorator', 'decorators/' + theme['decorator'] + '.svg', data)
@@ -67,7 +70,7 @@ svg.setPart('border_bottom_right', 'borders/' + border['bottom_right'] + '.svg',
 svg.setPart('title', 'headers/' + theme['header'] + '.svg', data)
 
 svg.setPart('school', 'schools/' + theme['school'] + '.svg', data)
-data['teacher']['image'] = svg.crop(data['teacher']['image'])
+data['teacher']['image'] = svg.crop(data['teacher']['image'], defaultMode)
 svg.setPart('teacher', 'teachers/' + theme['teacher'] + '.svg', data['teacher'])
 
 svg.setText('endmsg', data['endmsg'])
@@ -99,7 +102,7 @@ if toDelete is not None:
 idx = 0
 while idx &lt; numStudents:
   student = data['students'][idx]
-  student['image'] = svg.crop(student['image'])
+  student['image'] = svg.crop(student['image'], defaultMode)
   partIdx = idx + 1
   if toDelete is not None:
     while partIdx in toDelete:
@@ -120,7 +123,7 @@ while idx &lt; numAssistants:
   idxSuffix = idx + 1
   idName = 'assistant' + str('0' if idxSuffix &lt; 10 else '') + str(idxSuffix)
   assistant = data['assistants'][idx]
-  assistant['image'] = svg.crop(assistant['image'])
+  assistant['image'] = svg.crop(assistant['image'], defaultMode)
   svg.setPart(idName, 'teachers/' + theme['teacher'] + '.svg', assistant)
   idx += 1
 
